@@ -1,0 +1,41 @@
+Gerenciador de Tarefas em PHP
+
+Um gerenciador de tarefas simples, desenvolvido em PHP,
+que permite aos usuários criar, visualizar, editar e excluir suas tarefas de maneira intuitiva.
+
+Índice
+
+Características
+Tecnologias Utilizadas
+Instalação
+Uso
+Contribuição
+Licença
+Características
+
+Criação de novas tarefas
+Edição de tarefas existentes
+Exclusão de tarefas
+Marcação de tarefas como concluídas
+Armazenamento de tarefas em um banco de dados
+
+Tecnologias Utilizadas
+Backend: PHP
+Banco de Dados: MySQL
+Frontend: HTML, CSS
+
+Instalação
+Clone o repositório:
+bash
+Copiar código
+git clone https://github.com/seuusuario/gerenciador-de-tarefas.git
+Navegue até o diretório do projeto:
+bash
+Copiar código
+cd gerenciador-de-tarefas
+Crie um banco de dados MySQL e importe o arquivo database.sql para criar as tabelas necessárias.
+Atualize as credenciais do banco de dados no arquivo config.php.
+Inicie um servidor local (por exemplo, usando o XAMPP ou WAMP) e coloque o projeto na pasta htdocs.
+Acesse o projeto pelo navegador em http://localhost/gerenciador-de-tarefas.
+Uso
+Após configurar o projeto, você pode começar a gerenciar suas tarefas através da interface. Crie, edite e exclua tarefas conforme necessário.
