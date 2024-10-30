@@ -19,11 +19,21 @@
             <input type="submit" value="Cadastrar">
         </fieldset>
     </form>
-    
+
     <?php
        if(isset($_GET['nome'])){
-           echo "Nome informado: " . $_GET['nome'];
+           $lista_de_tarefas[] = $_GET['nome'];
        }
-    ?>     
+    ?>
+    <table>
+        <tr>
+            <th>Tarefas</th>
+        </tr>
+        <?php foreach($lista_de_tarefas as $tarefa) : ?>
+            <tr>
+                <td><?php echo $tarefa; ?></td>
+            </tr>
+        <?php endforeach; 
+    ?>
 </body>
 </html>
