@@ -8,5 +8,14 @@
 <body>
     <h1>Gerenciador de Tarefas</h1>
     <!-- Restante da Página -->
+
+
+
+
+  <?php
+       if(isset($_GET['nome'])){
+           echo "Nome informado: " . $_GET['nome'];
+       }
+  ?>     
 </body>
 </html>
