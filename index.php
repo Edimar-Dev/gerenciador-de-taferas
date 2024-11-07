@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -21,10 +22,16 @@
     </form>
 
     <?php
-       if(isset($_GET['nome'])){
-           $lista_de_tarefas[] = $_GET['nome'];
-       }
+        if (isset($_GET['nome'])) {
+            $_SESSION['lista_de_tarefas'][] = $_GET['nome'];
+    }
+        $lista_de_tarefas = array();
+
+        if (isset($_SESSION['lista_de_tarefas'])) {
+            $lista_de_tarefas = $_SESSION['lista_de_tarefas'];
+    }
     ?>
+    
     <table>
         <tr>
             <th>Tarefas</th>
@@ -33,7 +40,8 @@
             <tr>
                 <td><?php echo $tarefa; ?></td>
             </tr>
-        <?php endforeach; 
-    ?>
+        <?php endforeach; ?>
+    </table>
+
 </body>
 </html>
